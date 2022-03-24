@@ -1,11 +1,20 @@
+/*
+ * @Author       : Leon Lee
+ * @Date         : 2022-03-24 18:24:09
+ * @LastEditors  : Leon
+ * @LastEditTime : 2022-03-24 18:26:57
+ * @Description  : file content
+ * @FilePath     : \calendar\calendar_test.cpp
+ */
 #include "calendar.h"
+#include "calendar.cpp"
 #include <iostream>
 
 int main()
 {
-    Calendar* m_calendar = new Calendar;
+    Calendar *m_calendar = new Calendar;
 
-    if (m_calendar->SetSolarDate(2021, 11, 29, 20, 01, 10))
+    if (m_calendar->SetSolarDate(2022, 4, 29, 20, 01, 10))
     {
         std::cout << "农历年:" << m_calendar->lunarYear << std::endl;
         std::cout << "农历月:" << m_calendar->lunarMonth << std::endl;
